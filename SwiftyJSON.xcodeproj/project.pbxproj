@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_SwiftyJSON, ______Target_SwiftyJSONTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Example' = {
+            isa = PBXFileReference;
+            lastKnownFileType = folder;
+            name = 'Example';
+            path = 'Example';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Package-Builder' = {
+            isa = PBXFileReference;
+            lastKnownFileType = folder;
+            name = 'Package-Builder';
+            path = 'Package-Builder';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_scripts' = {
+            isa = PBXFileReference;
+            lastKnownFileType = folder;
+            name = 'scripts';
+            path = 'scripts';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, '__PBXFileRef_Example','__PBXFileRef_Package-Builder','__PBXFileRef_scripts', Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Source/LclJSONSerialization.swift' = {
+            name = 'LclJSONSerialization.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Source/LclJSONSerialization.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Source/SwiftyJSON.swift' = {
+            name = 'SwiftyJSON.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Source/SwiftyJSON.swift';
+            sourceTree = '<group>';
+        };
+        _______Group_SwiftyJSON = {
+            isa = PBXGroup;
+            name = 'SwiftyJSON';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Source/LclJSONSerialization.swift', '__PBXFileRef_Source/SwiftyJSON.swift');
+        };
+        ______Target_SwiftyJSON = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwiftyJSON;
+            buildPhases = (CompilePhase_SwiftyJSON, ___LinkPhase_SwiftyJSON);
+            buildRules = ();
+            dependencies = ();
+            name = 'SwiftyJSON';
+            productName = SwiftyJSON;
+            productReference = _____Product_SwiftyJSON;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_SwiftyJSON = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'SwiftyJSON.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwiftyJSON = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Source/LclJSONSerialization.swift', '__src_cc_ref_Source/SwiftyJSON.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Source/LclJSONSerialization.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Source/LclJSONSerialization.swift';
+        };
+        '__src_cc_ref_Source/SwiftyJSON.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Source/SwiftyJSON.swift';
+        };
+        ___LinkPhase_SwiftyJSON = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_SwiftyJSON = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwiftyJSON, _ReleaseConf_SwiftyJSON);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwiftyJSON = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftyJSON.xcodeproj/SwiftyJSON_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "SwiftyJSON" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Debug;
+        };
+        _ReleaseConf_SwiftyJSON = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftyJSON.xcodeproj/SwiftyJSON_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "SwiftyJSON" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Release;
+        };
+        __Dependency_SwiftyJSON = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwiftyJSON;
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/ArrayTests.swift' = {
+            name = 'ArrayTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/ArrayTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/BaseTests.swift' = {
+            name = 'BaseTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/BaseTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/ComparableTests.swift' = {
+            name = 'ComparableTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/ComparableTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/DictionaryTests.swift' = {
+            name = 'DictionaryTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/DictionaryTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/LiteralConvertibleTests.swift' = {
+            name = 'LiteralConvertibleTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/LiteralConvertibleTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/NumberTests.swift' = {
+            name = 'NumberTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/NumberTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/PerformanceTests.swift' = {
+            name = 'PerformanceTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/PerformanceTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/PrintableTests.swift' = {
+            name = 'PrintableTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/PrintableTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/RawRepresentableTests.swift' = {
+            name = 'RawRepresentableTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/RawRepresentableTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/RawTests.swift' = {
+            name = 'RawTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/RawTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/SequenceTypeTests.swift' = {
+            name = 'SequenceTypeTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/SequenceTypeTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/StringTests.swift' = {
+            name = 'StringTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/StringTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftyJSONTests/SubscriptTests.swift' = {
+            name = 'SubscriptTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftyJSONTests/SubscriptTests.swift';
+            sourceTree = '<group>';
+        };
+        _______Group_SwiftyJSONTests = {
+            isa = PBXGroup;
+            name = 'SwiftyJSONTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/SwiftyJSONTests/ArrayTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/BaseTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/ComparableTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/DictionaryTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/LiteralConvertibleTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/NumberTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/PerformanceTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/PrintableTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/RawRepresentableTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/RawTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/SequenceTypeTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/StringTests.swift', '__PBXFileRef_Tests/SwiftyJSONTests/SubscriptTests.swift');
+        };
+        ______Target_SwiftyJSONTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwiftyJSONTests;
+            buildPhases = (CompilePhase_SwiftyJSONTests, ___LinkPhase_SwiftyJSONTests);
+            buildRules = ();
+            dependencies = (__Dependency_SwiftyJSON);
+            name = 'SwiftyJSONTests';
+            productName = SwiftyJSONTests;
+            productReference = _____Product_SwiftyJSONTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_SwiftyJSONTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'SwiftyJSONTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwiftyJSONTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/SwiftyJSONTests/ArrayTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/BaseTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/ComparableTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/DictionaryTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/LiteralConvertibleTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/NumberTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/PerformanceTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/PrintableTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/RawRepresentableTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/RawTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/SequenceTypeTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/StringTests.swift', '__src_cc_ref_Tests/SwiftyJSONTests/SubscriptTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/ArrayTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/ArrayTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/BaseTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/BaseTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/ComparableTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/ComparableTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/DictionaryTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/DictionaryTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/LiteralConvertibleTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/LiteralConvertibleTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/NumberTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/NumberTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/PerformanceTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/PerformanceTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/PrintableTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/PrintableTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/RawRepresentableTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/RawRepresentableTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/RawTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/RawTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/SequenceTypeTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/SequenceTypeTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/StringTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/StringTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftyJSONTests/SubscriptTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftyJSONTests/SubscriptTests.swift';
+        };
+        ___LinkPhase_SwiftyJSONTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SwiftyJSON_via_SwiftyJSONTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SwiftyJSON_via_SwiftyJSONTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SwiftyJSON;
+        };
+        _______Confs_SwiftyJSONTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwiftyJSONTests, _ReleaseConf_SwiftyJSONTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwiftyJSONTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftyJSON.xcodeproj/SwiftyJSONTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Debug;
+        };
+        _ReleaseConf_SwiftyJSONTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftyJSON.xcodeproj/SwiftyJSONTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Release;
+        };
+        __Dependency_SwiftyJSONTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwiftyJSONTests;
+        };
+        '__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'SwiftyJSON.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Debug.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'SwiftyJSON.xcodeproj/Configs/Debug.xcconfig';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Release.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'SwiftyJSON.xcodeproj/Configs/Release.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Project.xcconfig', '__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Debug.xcconfig', '__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Release.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_SwiftyJSON);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_SwiftyJSONTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_SwiftyJSONTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_SwiftyJSON);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Debug.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_SwiftyJSON.xcodeproj/Configs/Release.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
